@@ -14,8 +14,8 @@
 
       <ul class="navbar-nav mb-2 mb-lg-0 dropdown">
         <% if user_signed_in? %>
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Image
+          <a class="nav-link dropdown-toggle mr-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <%= image_tag avatar_path(Current.user, size: 40), width: 20, height: 20, class: "rounded me-1" %>
             <%= Current.user.name %>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
