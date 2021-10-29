@@ -1,6 +1,8 @@
 require "simplecov"
 SimpleCov.start do
   add_filter "/spec/"
+  add_filter "/config/initializers/devise.rb"
+  add_filter "/app/controllers/users/devise_controller.rb"
 end
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration

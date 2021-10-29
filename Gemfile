@@ -14,13 +14,12 @@ gem "jsbundling-rails"
 gem "cssbundling-rails"
 gem "friendly_id", "~> 5.4.0"
 gem "name_of_person"
-gem 'devise-bootstrapped'
-
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "standard", "~> 1.1", ">= 1.1.5", require: false
   gem "capybara"
+  gem "capybara-screenshot"
   gem "webdrivers"
 end
 
