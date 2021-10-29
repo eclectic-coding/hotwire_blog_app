@@ -12,6 +12,10 @@ gem "bootsnap", ">= 1.4.4", require: false
 gem "faker", "~> 2.18"
 gem "jsbundling-rails"
 gem "cssbundling-rails"
+gem "friendly_id", "~> 5.4.0"
+gem "name_of_person"
+gem 'devise-bootstrapped'
+
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
@@ -41,3 +45,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "devise", "~> 4.8"
